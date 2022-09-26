@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/reem.jpg);
+    background-size: cover;
+    background-position: 0 -30px;
+    font-family: sans-serif;
+}
+
+.box{
+    width: 370px;
+    height: 500px;
+    background: #d7baa600;
+    margin: 50px auto;
+    box-shadow:  0 30px 30px #2769e4c9;
+    padding: 50px;
+}
+.box .top span{
+    display: inline-block;
+    color: rgb(65, 65, 214);
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.box .top span:last-of-type{
+    margin-left: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px  solid rgb(19, 22, 29);
+    
+}
+.box .middle p{
+    color: rgb(30, 30, 165);
+   /* border-bottom: 1px dotted #ffffff;*/
+    padding-bottom: 10px;
+    font-weight: 600;
+    margin-top: 75px;
+    background: linear-gradient(90deg,rgba(157, 157, 252, 0.4),rgb(255, 255, 255,0.2));
+}
+.box .bottom span{
+    color: rgba(226, 226, 240, 0.979);
+    padding-left: 10px;
+    margin-top: 15px;
+    
+}
+.box .bottom span:last-of-type {
+    display: block;
+    padding: 12px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #db20c2da;
+    border-radius: 15px;
+    margin: 70px;
+    width: 200px;
+   
+}
+.box .bottom span:last-of-type:hover{
+  box-shadow: 0 0 10px pink, 0 0 20px pink ,0 0 30px pink;
+  background-color: pink;
+  color: rgb(214, 144, 106);
+  border-radius: 20px;
+
+}
