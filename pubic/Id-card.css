@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background: #eee;
+}
+
+body , .card ,.group{
+    display: flex;
+}
+
+.card{
+    padding: 2.5rem;
+    border-radius: 10px;
+    background: #1d4a6e;
+    max-width: 500px;
+    min-height: 200px;
+    min-width: 300px;
+    box-shadow: 0 0 30px rgba(0,0,0,15%);
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.card::before,.card::after,.card .img::before{
+content: "";
+position: absolute;
+z-index: 1;
+}
+
+.card::before{
+    width: 100%;
+    height: 100%;
+    border: 6px solid #9bd2ff;
+    border-radius: 10px;
+    top:-0.7rem;
+   left: -0.7rem;
+}
+
+.card::after{
+    height: 10rem;
+    width: 12rem;
+    background:#48adff;
+    top: -5rem;
+    right: -5rem;
+    box-shadow: -5rem 0 0 -3rem#9bd2ff;
+}
+
+.card::after ,.card img ,.card .img::before{
+    border-radius:50% ;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+   
+}
+
+.card img{
+    width: 8rem;
+    min-width: 80px;
+    box-shadow: 0 0  5px #7ccbf0,0 0  10px  #7ccbf0,0 0 8px  #7ccbf0;
+}
+
+.card .img::before{
+  height: 8rem;
+  width: 8rem;
+  background:#48adff;
+  bottom: -5rem;
+  left: -3rem;
+  box-shadow: 3rem 0 0 -1rem #9bd2ff;
+}
+
+.info{
+    margin-left: 1.5rem;
+    z-index: 99;
+}
+.name{
+    margin-bottom: 1rem;
+}
+
+.name h2{
+    color:  #e7f7ff;
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.name h4{
+    font-size: 0.8rem;
+    color:  #8fb4e5;
+    margin-left: 4px;
+}
+
+.group, .text{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #e7f7ff;
+
+}
+
+.group .list{
+    width:75px;
+}
+
+.group span{
+    display: block;
+}
+
+.group span:first-child{
+    font-weight: 600;
+    line-height: 2;
+    margin-left: 1px;
+}
+
+.links button{
+    min-width: 140px;
+    padding: 0.6rem;
+    border: 1px solid rgb(134, 223, 255);
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.25s linear;
+    cursor:pointer;
+}
+
+ .links .follow, .links .view:hover{
+    background:  rgb(65, 188, 233);
+    color:rgb(253, 244, 226);
+}
+.links .follow:hover, .links .view{
+    background: transparent;
+    color: #0bf;
+}
+@media screen and (max-width:450px){
+    .card{
+        display: block;
+        height: 484px;
+    }
+    .info{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+    .links button{
+        min-width: 100px;
+    }
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: "poppins",sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(../images/background7.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+header{
+    position: relative;
+    display: flex;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+
+}
+
+header .logo{
+    position: relative;
+    color:rgb(123, 90, 175,0.6);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+header .nav a{
+    color: rgb(123, 90, 175,);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 2px 25px;
+    border-radius: 7px;
+    transition: 0.7s;
+    transition-property: background;
+} 
+
+header .nav a:not(:last-child){
+    margin-right: 20px;
+}
+
+header .nav a:hover{
+    background: linear-gradient(170deg,rgb(255, 174, 224) , rgb(209, 239, 248) );
+}
+
+.content{
+max-width: 650px;
+margin: 80px 100px;
+}
+
+.content .info h2{
+    color: rgb(85, 201, 255);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 40px;
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+
+.content .info span{
+    color: rgb(251, 142, 255,0.7);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content .info p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 90px;
+    margin-top: 60px;
+    line-height:25px;
+    color: rgb(65, 155, 207);
+}
+
+.content .info-btn{
+     color: rgb(61, 9, 41);
+     background-color: rgb(240, 126, 232);
+     text-decoration: none;
+     text-transform: uppercase;
+     font-weight: 700;
+     letter-spacing: 2px;
+     padding: 10px 20px;
+     border-radius: 5px;
+     transition: 0.3s;
+     transition-property: background;
+     border: 1px solid;
+
+}
+.content .info-btn:hover{
+    box-shadow: 0 0 10px rgb(251, 142, 255) ,0 0 20px  rgb(251, 142, 255),0 0 40px rgb(251, 142, 255);
+    background:rgb(226, 108, 250) ;
+    color: rgb(61, 9, 41);
+    border: 1px dotted;
+    border-radius: 10px;
+}
+
+.media-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+ 
+}
+
+.media-icon a{
+    position: relative;
+    color: rgb(158, 97, 255);
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+
+}
+
+.media-icon a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icon a:hover{
+    transform: scale(1.5);
+}
